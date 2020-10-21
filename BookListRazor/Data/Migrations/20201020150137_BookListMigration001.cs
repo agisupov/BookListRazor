@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace BookListRazor.Migrations
+namespace BookListRazor.Data.Migrations
 {
     public partial class BookListMigration001 : Migration
     {

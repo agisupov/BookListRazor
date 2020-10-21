@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20201020145647_BookListMigration001.cs" />
-    <Compile Remove="Migrations\20201020145647_BookListMigration001.Designer.cs" />
-    <Compile Remove="Migrations\20201020152119_BookListMigration003.cs" />
-    <Compile Remove="Migrations\20201020152119_BookListMigration003.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201020145647_BookListMigration001.cs" />
+    <Compile Remove="Data\Migrations\20201020145647_BookListMigration001.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201020152119_BookListMigration003.cs" />
+    <Compile Remove="Data\Migrations\20201020152119_BookListMigration003.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201021110021_BookListRazor004.cs" />
+    <Compile Remove="Data\Migrations\20201021110021_BookListRazor004.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

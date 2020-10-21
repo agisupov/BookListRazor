@@ -1,4 +1,4 @@
-﻿using BookListRazor.Model;
+﻿using BookListRazor.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Razor.Language.Extensions;
 using Microsoft.EntityFrameworkCore;

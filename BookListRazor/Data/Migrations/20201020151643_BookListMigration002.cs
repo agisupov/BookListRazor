@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace BookListRazor.Migrations
+namespace BookListRazor.Data.Migrations
 {
     public partial class BookListMigration002 : Migration
     {
