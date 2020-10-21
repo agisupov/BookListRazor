@@ -23,21 +23,21 @@ namespace BookListRazor.Pages.BookList
         {
             Book = new Book();
             if (ID is null)
-                return Page();
-            Book = await _db.Book.FirstOrDefaultAsync(u => u.Id == ID);
+                return Page(); //create
+            Book = await _db.Book.FirstOrDefaultAsync(u => u.Id == ID); //update
             if (Book is null)
                 return NotFound();
-            Book = await _db.Book.FindAsync(ID);
+            return Page();
         }
 
         public async Task<IActionResult> OnPost()
         {
             if (ModelState.IsValid)
             {
-                var BookFromDb = await _db.Book.FindAsync(Book.Id);
-                BookFromDb.Name = Book.Name;
-                BookFromDb.Author = BookFromDb.Author;
-                BookFromDb.ISBN = Book.ISBN;
+                if (Book.Id == 0)
+                    _db.Book.Add(Book);
+                else
+                    _db.Book.Update(Book);
                 await _db.SaveChangesAsync();
                 return RedirectToPage("Index");
             }
